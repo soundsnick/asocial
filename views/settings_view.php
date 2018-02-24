@@ -1,0 +1,1 @@
+<?php echo array_search($page, $loginNeeded);
