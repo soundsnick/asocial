@@ -31,10 +31,10 @@
                         <span class="post__date">'.$post['date'].'</span>
                     </div>
                 </div>
+                <pre class="post__content">'.$post['content'].'</pre>
                 <div class="post__img--wrapper">
                     '.$post['imagesString'].'
                 </div>
-                <pre class="post__content">'.$post['content'].'</pre>
                 <div class="post__control">
                     <div class="post__comments-control--wrapper">
                         <span class="post__comments-control" data-id="'.$post['id'].'"></span>

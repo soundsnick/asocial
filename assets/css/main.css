@@ -58,6 +58,7 @@ a {
 .header__logo {
   margin: 0;
   font-size: 1.5em;
+  font-family: Gotham Pro;
   line-height: 50px;
   color: #FFF;
   font-weight: 300;
@@ -69,10 +70,12 @@ a {
 
 .header__navigation--item {
   line-height: 50px;
-  padding: 0 7px;
+  padding: 0 4px;
   color: #FFF;
   opacity: .8;
-  font-size: 15px;
+  font-weight: 200;
+  font-size: 13px;
+  font-family: Gotham Pro;
   transition: opacity 0.15s;
 }
 
@@ -121,7 +124,9 @@ a {
   width: 100%;
   padding: 15px 30px;
   border-radius: 2px;
-  font-size: 12px;
+  font-size: 14px;
+  font-family: Roboto;
+  font-weight: 400;
   margin-top: 10px;
   text-transform: uppercase;
   background: #00BCD4;
@@ -188,9 +193,9 @@ a {
 }
 
 .post {
-  padding-bottom: 1px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   position: relative;
+  overflow: hidden;
 }
 
 .post__avatar--wrapper {
@@ -198,7 +203,8 @@ a {
   height: 60px;
   overflow: hidden;
   border-radius: 100%;
-  margin: 10px;
+  margin: 20px 10px;
+  margin-left: 20px;
   cursor: pointer;
   transition: border-radius 0.15s;
 }
@@ -223,12 +229,18 @@ a {
 }
 
 .post__content {
-  font-family: Open Sans;
+  font-family: Gotham Pro;
+  font-weight: 200;
   white-space: pre-wrap;
-  padding: 0 20px;
-  line-height: 1.5;
+  padding: 0px 20px;
+  line-height: 1.55;
+  padding-bottom: 35px;
   font-size: 17px;
-  margin: 15px 0;
+  color: #3d3d3d;
+  margin: 0;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+  position: relative;
+  overflow-x: hidden;
 }
 
 .post__name--wrapper {
@@ -241,46 +253,50 @@ a {
   display: block;
   font-size: 18px;
   padding: 0 5px;
-  padding-top: 19px;
-  padding-bottom: 3px;
+  padding-top: 28px;
+  font-family: Gotham Pro;
+  color: #33838d;
+  font-weight: 200;
+  padding-bottom: 2px;
+  cursor: pointer;
+}
+
+.post__name:hover {
+  text-decoration: underline;
 }
 
 .post__date {
   display: block;
-  padding: 0 5px;
-  font-size: 11px;
-  color: rgba(0, 0, 0, 0.4);
-  font-weight: 500;
+  padding: 0px 5px;
+  font-size: 14px;
   font-family: Open Sans;
+  color: rgba(0, 0, 0, 0.35);
+  font-weight: 600;
 }
 
 .post__control {
   text-align: right;
-  padding: 20px;
+  background: #f8f8f8;
 }
 
 .post__dislike--wrapper {
   display: inline-block;
-  position: absolute;
-  bottom: -20px;
-  right: 20px;
 }
 
 .post__dislike {
   display: flex;
-  color: rgba(0, 0, 0, 0.5);
-  font-family: Open Sans;
+  color: rgba(145, 145, 145, 0.5);
+  font-family: Gotham Pro;
   border-radius: 2px;
-  padding: 10px 20px;
-  border-radius: 100px;
-  background: #f0f0f0;
-  box-shadow: 0 6px 7px 0 rgba(0, 0, 0, 0.07), 0 2px 7px 0 rgba(0, 0, 0, 0.09);
+  font-weight: 100;
+  font-size: 14px;
+  padding: 15px 20px;
   cursor: pointer;
   transition: background 0.15s, color 0.15s, box-shadow 0.15s;
 }
 
 .post__dislike:hover {
-  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.04), 0 1px 3px 0 rgba(0, 0, 0, 0.09);
+  color: rgba(145, 145, 145, 0.65);
 }
 
 .post__dislike i {
@@ -289,27 +305,26 @@ a {
 
 .post__dislike--index {
   vertical-align: middle;
-  font-weight: 400;
+  font-weight: 300;
   padding-left: 5px;
+  line-height: 20px;
 }
 
 .post__dislike.active {
-  color: #FFF;
-  background: #00BCD4;
+  color: #ff3774;
 }
 
 .post__title {
   margin: 0;
-  padding-bottom: 10px;
-  font-weight: 400;
+  padding-bottom: 5px;
+  font-weight: 300;
   font-size: 1.4em;
-  color: #282828;
-  margin-top: -10px;
+  color: #4a4a4a;
 }
 
 .post__bold {
-  font-weight: 500;
-  color: #282828;
+  font-weight: 300;
+  color: #4a4a4a;
 }
 
 .footer {
@@ -334,6 +349,8 @@ a {
   border-color: rgba(128, 142, 182, 0.192);
   padding: 15px;
   font-size: 14px;
+  font-weight: 200;
+  font-family: Gotham Pro;
   margin-bottom: 10px;
   color: #808eb6;
   background: rgba(0, 187, 212, 0.15);
